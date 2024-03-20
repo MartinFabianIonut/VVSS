@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="" />
+    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f01b9f8917f794cdf589fb86ab1f8dec2bc64a1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f01b9f8917f794cdf589fb86ab1f8dec2bc64a1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/665dec39384a747ccf12fd544bf02f4a3d18695a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/665dec39384a747ccf12fd544bf02f4a3d18695a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d63de46d8ec7dacaab386b187106455df813537" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d63de46d8ec7dacaab386b187106455df813537" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0863ceba847dbe828ffdd5fa8207144974e4dc8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0863ceba847dbe828ffdd5fa8207144974e4dc8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ecf3c385b36af4d118754ee8d9878c48978fcaa9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ecf3c385b36af4d118754ee8d9878c48978fcaa9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f77a2442ed82eb8b7386f5c9a49162f894ad8a61" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f77a2442ed82eb8b7386f5c9a49162f894ad8a61" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/Lab01/Lab01_Architectural Design Phase Defects Checklist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Lab01/Lab01_Architectural Design Phase Defects Checklist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/Lab01/Lab01_Program Coding Phase Defects Checklist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Lab01/Lab01_Program Coding Phase Defects Checklist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/Lab01/Lab01_ReviewReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Lab01/Lab01_ReviewReport.xlsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -286,7 +299,8 @@
       <workItem from="1707073641026" duration="1441000" />
       <workItem from="1707124066522" duration="1999000" />
       <workItem from="1710617988461" duration="4376000" />
-      <workItem from="1710622407193" duration="602000" />
+      <workItem from="1710622407193" duration="1209000" />
+      <workItem from="1710955014219" duration="3851000" />
     </task>
     <task id="LOCAL-00001" summary="initial version">
       <created>1613577157958</created>
