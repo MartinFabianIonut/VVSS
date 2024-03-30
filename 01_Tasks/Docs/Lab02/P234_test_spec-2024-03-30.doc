@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testspec Prj234 - mfir3158_BBT</title>
+<link type="text/css" rel="stylesheet" href="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width= height= src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj234<br/>Test Suite: Prj234 - mfir3158_BBT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 30/03/2024</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.mfir3158_BBT</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc20988">P234-21: P234-21:addTask1-ECP-Valid</a></p><p style="padding-left: 45px;"><a href="#toc_tc20990">P234-22: P234-22:addTask1-ECP-Inalid</a></p><p style="padding-left: 45px;"><a href="#toc_tc20992">P234-23: P234-23:addTask1-BVS-Valid</a></p><p style="padding-left: 45px;"><a href="#toc_tc20994">P234-24: P234-21:addTask1-BVS-Invalid</a></p></div><h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>Testing project for group 234</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1.Test Suite : mfir3158_BBT</h1>
+<a name="toc_tc20988"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case P234-21: P234-21:addTask1-ECP-Valid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir3158</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+	<tbody>
+		<tr>
+			<td rowspan="2">
+			<p>Nr. TC</p>
+			</td>
+			<td rowspan="2">
+			<p>EC input</p>
+			</td>
+			<td rowspan="2">
+			<p>EC output</p>
+			</td>
+			<td>
+			<p>Input</p>
+			</td>
+			<td rowspan="2">
+			<p>Output</p>
+			</td>
+		</tr>
+		<tr>
+			<td>h,m</td>
+		</tr>
+		<tr>
+			<td>TC01</td>
+			<td>1,4</td>
+			<td>ADAUGAT</td>
+			<td>5,26</td>
+			<td>ADAUGAT</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Timp HH:mm</p>
+
+<p>0 &lt;= h &lt;= 23&nbsp;, 0 &lt;= m &lt;= 59</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+	<tbody>
+		<tr>
+			<td>Nr. EC</td>
+			<td>
+			<p>Conditie</p>
+			</td>
+			<td>
+			<p>EC valida</p>
+			</td>
+			<td>
+			<p>EC non-valida</p>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td colspan="1" rowspan="3">0 &lt;= h &lt;= 23</td>
+			<td>0 &lt;= h &lt;= 23</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>&nbsp;</td>
+			<td>h &lt; 0</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>&nbsp;</td>
+			<td>h &gt; 23</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td colspan="1" rowspan="3">0 &lt;= m &lt;= 59</td>
+			<td>0 &lt;= m &lt;= 59</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>&nbsp;</td>
+			<td>m &lt; 0</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>&nbsp;</td>
+			<td>m &gt; 59</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >DateServiceTest</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >testValidDateAndTimeMergeECP</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">5:  mfir3158_F01 [Version : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc20990"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case P234-22: P234-22:addTask1-ECP-Inalid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir3158</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td rowspan="2">
+			<p>Nr. TC</p>
+			</td>
+			<td rowspan="2">
+			<p>EC input</p>
+			</td>
+			<td rowspan="2">
+			<p>EC output</p>
+			</td>
+			<td>
+			<p>Input</p>
+			</td>
+			<td rowspan="2">
+			<p>Output</p>
+			</td>
+		</tr>
+		<tr>
+			<td>h,m</td>
+		</tr>
+		<tr>
+			<td>TC01</td>
+			<td>1,5</td>
+			<td>nu a fost adaugat</td>
+			<td>2,121</td>
+			<td>nu a fost adaugat</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Timp HH:mm</p>
+
+<p>0 &lt;= h &lt;= 23&nbsp;, 0 &lt;= m &lt;= 59</p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>Nr. EC</td>
+			<td>
+			<p>Conditie</p>
+			</td>
+			<td>
+			<p>EC valida</p>
+			</td>
+			<td>
+			<p>EC non-valida</p>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td colspan="1" rowspan="3">0 &lt;= h &lt;= 23</td>
+			<td>0 &lt;= h &lt;= 23</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>&nbsp;</td>
+			<td>h &lt; 0</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>&nbsp;</td>
+			<td>h &gt; 23</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td colspan="1" rowspan="3">0 &lt;= m &lt;= 59</td>
+			<td>0 &lt;= m &lt;= 59</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>&nbsp;</td>
+			<td>m &lt; 0</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>&nbsp;</td>
+			<td>m &gt; 59</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >DateServiceTest</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">5:  mfir3158_F01 [Version : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc20992"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case P234-23: P234-23:addTask1-BVS-Valid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir3158</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+	<tbody>
+		<tr>
+			<td>
+			<p>No TCxx_BVA</p>
+			</td>
+			<td>
+			<p>Conditie BVA</p>
+			</td>
+			<td>
+			<p>input data<br />
+			h,m</p>
+			</td>
+			<td>
+			<p>output data</p>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>h = 0, m = 0</td>
+			<td>0,0</td>
+			<td>nu arunca eroare, returneaza un Date</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Timp HH:mm</p>
+
+<p>0 &lt;= h &lt;= 23&nbsp;, 0 &lt;= m &lt;= 59</p>
+
+<p>&nbsp;</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+	<tbody>
+		<tr>
+			<td>
+			<p>Nr. Conditie BVA</p>
+			</td>
+			<td>
+			<p>EC asociata</p>
+			</td>
+			<td>
+			<p>Conditie BVA</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="6">1</td>
+			<td colspan="1" rowspan="6">0 &lt;= h &lt;= 23&nbsp;</td>
+			<td>h = -1</td>
+		</tr>
+		<tr>
+			<td>h = 0</td>
+		</tr>
+		<tr>
+			<td>h = 1</td>
+		</tr>
+		<tr>
+			<td>h = 22</td>
+		</tr>
+		<tr>
+			<td>h = 23</td>
+		</tr>
+		<tr>
+			<td>h = 24</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="6">2</td>
+			<td colspan="1" rowspan="6">0 &lt;= m &lt;= 59</td>
+			<td>m = -1</td>
+		</tr>
+		<tr>
+			<td>m = 0</td>
+		</tr>
+		<tr>
+			<td>m = 1</td>
+		</tr>
+		<tr>
+			<td>m = 58</td>
+		</tr>
+		<tr>
+			<td>m = 59</td>
+		</tr>
+		<tr>
+			<td>m = 60</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >DateServiceTest</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >testHourAndMinuteBoundariesInDateAndTimeMergingBVA</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">5:  mfir3158_F01 [Version : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc20994"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case P234-24: P234-21:addTask1-BVS-Invalid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir3158</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+			<p>No TCxx_BVA</p>
+			</td>
+			<td>
+			<p>Conditie BVA</p>
+			</td>
+			<td>
+			<p>input data<br />
+			h,m</p>
+			</td>
+			<td>
+			<p>output data</p>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>h = 24, m = 0</td>
+			<td>24,0</td>
+			<td>arunca eroare, returneaza un Date</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Timp HH:mm</p>
+
+<p>0 &lt;= h &lt;= 23&nbsp;, 0 &lt;= m &lt;= 59</p>
+
+<p>&nbsp;</p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+			<p>Nr. Conditie BVA</p>
+			</td>
+			<td>
+			<p>EC asociata</p>
+			</td>
+			<td>
+			<p>Conditie BVA</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="6">1</td>
+			<td colspan="1" rowspan="6">0 &lt;= h &lt;= 23&nbsp;</td>
+			<td>h = -1</td>
+		</tr>
+		<tr>
+			<td>h = 0</td>
+		</tr>
+		<tr>
+			<td>h = 1</td>
+		</tr>
+		<tr>
+			<td>h = 22</td>
+		</tr>
+		<tr>
+			<td>h = 23</td>
+		</tr>
+		<tr>
+			<td>h = 24</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="6">2</td>
+			<td colspan="1" rowspan="6">0 &lt;= m &lt;= 59</td>
+			<td>m = -1</td>
+		</tr>
+		<tr>
+			<td>m = 0</td>
+		</tr>
+		<tr>
+			<td>m = 1</td>
+		</tr>
+		<tr>
+			<td>m = 58</td>
+		</tr>
+		<tr>
+			<td>m = 59</td>
+		</tr>
+		<tr>
+			<td>m = 60</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >DateServiceTest</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >testHourAndMinuteBoundariesInDateAndTimeMergingBVA</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">5:  mfir3158_F01 [Version : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+
+</body>
+</html>
