@@ -1,0 +1,7 @@
+# Ignoră folderul Target
+Target/
+
+# Ignoră directorul .idea
+.idea/
+
+01_Tasks/target/
