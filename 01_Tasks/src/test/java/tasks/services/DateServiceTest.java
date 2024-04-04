@@ -26,7 +26,7 @@ class DateServiceTest {
     void testValidDateAndTimeMergeECP() {
         // Arrange
         Date date = new Date();
-        String time = "5:26";
+        String time = "5:15";
 
         // Act
         Date mergedDate = dateService.getDateMergedWithTime(time, date);
@@ -36,7 +36,7 @@ class DateServiceTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"2:121", "25:00"})
+    @ValueSource(strings = { "2:-1", "-1:45", "25:-1"})
     @DisplayName("Invalid time throws IllegalArgumentException")
     void testValidDateAndInvalidTimeMergeECP(String time) {
         // Arrange

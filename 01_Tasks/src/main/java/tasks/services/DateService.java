@@ -9,8 +9,8 @@ import java.util.Date;
 
 public class DateService {
     public static final int SECONDS_IN_MINUTE = 60;
-    public static final int MINUTES_IN_HOUR = 60;
-    public static final int HOURS_IN_A_DAY = 24;
+    public static final int MINUTES_IN_HOUR = 59;
+    public static final int HOURS_IN_A_DAY = 23;
 
     private TasksService service;
 
@@ -32,7 +32,7 @@ public class DateService {
         String[] units = time.split(":");
         int hour = Integer.parseInt(units[0]);
         int minute = Integer.parseInt(units[1]);
-        if (hour > HOURS_IN_A_DAY || minute > MINUTES_IN_HOUR)
+        if (hour > HOURS_IN_A_DAY || minute > MINUTES_IN_HOUR || hour < 0 || minute < 0)
             throw new IllegalArgumentException("time unit exceeds bounds");
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(noTimeDate);
