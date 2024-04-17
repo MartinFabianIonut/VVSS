@@ -1,7 +1,14 @@
-# Ignoră folderul Target
-Target/
+# Ignoră directorul Target
+target/
 
 # Ignoră directorul .idea
 .idea/
 
+# Ignoră toate fișierele din directorul target al proiectului specific
 01_Tasks/target/
+
+# Ignoră fișierele de configurare specifice IDE
+*.iml
+
+# Ignoră toate subdirectoarele .idea din proiectul specific
+01_Tasks/.idea/
