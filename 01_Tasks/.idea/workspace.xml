@@ -4,53 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="Added tests">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/665dec39384a747ccf12fd544bf02f4a3d18695a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/665dec39384a747ccf12fd544bf02f4a3d18695a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/Lab03_WBT_TCs_Form.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Lab03/Lab03_WBT_TCs_Form.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/css/coverage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/css/idea.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/img/arrowDown.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/img/arrowUp.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/js/highlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/js/highlightjs-line-numbers.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-1/sources/source-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/sources/source-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/sources/source-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Lab03/ns-2/sources/source-3.html" beforeDir="false" />
-    </list>
+    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="Add excel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,6 +77,7 @@
     "JUnit.TaskTest.executor": "Coverage",
     "JUnit.TaskTest.shouldReturnNextTimeInLoopWhenCurrentBetweenTimeBeforeAndTimeAfter.executor": "Run",
     "JUnit.TaskTest.shouldReturnNullWhenTaskIsInactive.executor": "Run",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/Oti/Facultate/Materii/VVSS/01_Tasks/Docs/Lab03",
@@ -401,7 +356,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713340443493</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add excel">
+      <option name="closed" value="true" />
+      <created>1713346934936</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713346934936</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +388,8 @@
     <MESSAGE value="initial version" />
     <MESSAGE value="Added excel file" />
     <MESSAGE value="Added tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests" />
+    <MESSAGE value="Add excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add excel" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
