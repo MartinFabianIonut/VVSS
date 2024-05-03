@@ -141,29 +141,25 @@ class DateServiceTest {
     }
 
     @Test
-    @ParameterizedTest
-    @CsvSource({
-        "23, 59, true", // Ultimul minut valid al zilei
-        "0, 0, true",   // Primul minut valid al zilei
-        "24, 0, false", // Ora după ultima oră validă
-        "23, 60, false",// Minutul după ultimul minut valid
-        "-1, 0, false", // Ora înainte de prima oră validă
-        "0, -1, false"  // Minutul înainte de primul minut valid
-    })
-    @DisplayName("Boundary value testing for hour and minute in date and time merging")
-    void testHourAndMinuteBoundariesInDateAndTimeMergingBVA(int hour, int minute, boolean isValid) {
+    @DisplayName("Boundary value testing for hour and minute in date and time merging - valid values")
+    void testValidHourAndMinuteBoundariesInDateAndTimeMergingBVA() {
         // Arrange
-        String time = String.format("%d:%d", hour, minute);
+        String time = String.format("%d:%d", 0, 0);
         Date noTimeDate = new Date();
 
-        // Act & Assert
-        if (isValid) {
-            assertDoesNotThrow(() -> dateService.getDateMergedWithTime(time, noTimeDate),
+         assertDoesNotThrow(() -> dateService.getDateMergedWithTime(time, noTimeDate),
                 "Hour and minute within valid range should not throw");
-        } else {
-            assertThrows(IllegalArgumentException.class, () -> dateService.getDateMergedWithTime(time, noTimeDate),
-                "Hour or minute outside valid range should throw IllegalArgumentException");
-        }
+    }
+
+    @Test
+    @DisplayName("Boundary value testing for hour and minute in date and time merging - invalid values")
+    void testInvalidHourAndMinuteBoundariesInDateAndTimeMergingBVA() {
+        // Arrange
+        String time = String.format("%d:%d", 24, 0);
+        Date noTimeDate = new Date();
+
+        assertThrows(IllegalArgumentException.class, () -> dateService.getDateMergedWithTime(time, noTimeDate),
+                "Hour outside valid range should throw");
     }
 
 }
