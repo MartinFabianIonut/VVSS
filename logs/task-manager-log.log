@@ -81,3 +81,6 @@
 2024-03-30 20:09:11 INFO  Controller:74 - Main controller initializing
 2024-03-30 20:09:22 INFO  NewEditController:88 - new/edit window initializing
 2024-03-30 20:09:35 INFO  NewEditController:190 - Task{title='dsaddsa', time=Thu Mar 14 08:00:00 EET 2024, start=Thu Mar 14 08:00:00 EET 2024, end=Thu Mar 14 08:00:00 EET 2024, interval=0, active=false}
+2024-05-03 21:09:29 INFO  Main:35 - saved data reading
+2024-05-03 21:09:29 INFO  Main:40 - application start
+2024-05-03 21:09:29 INFO  Controller:74 - Main controller initializing
