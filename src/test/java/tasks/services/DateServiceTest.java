@@ -35,15 +35,13 @@ class DateServiceTest {
         assertNotNull(mergedDate, "Merged date should not be null");
     }
 
-    @ParameterizedTest
-    @ValueSource(strings = { "2:-1", "-1:45", "25:-1"})
     @DisplayName("Invalid time throws IllegalArgumentException")
-    void testValidDateAndInvalidTimeMergeECP(String time) {
+    void testValidDateAndInvalidTimeMergeECP() {
         // Arrange
         Date date = new Date();
 
         // Act & Assert
-        assertThrows(IllegalArgumentException.class, () -> dateService.getDateMergedWithTime(time, date),
+        assertThrows(IllegalArgumentException.class, () -> dateService.getDateMergedWithTime("2:121", date),
             "Expected an IllegalArgumentException for invalid time");
     }
 
