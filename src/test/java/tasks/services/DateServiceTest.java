@@ -35,6 +35,7 @@ class DateServiceTest {
         assertNotNull(mergedDate, "Merged date should not be null");
     }
 
+    @Test
     @DisplayName("Invalid time throws IllegalArgumentException")
     void testValidDateAndInvalidTimeMergeECP() {
         // Arrange
@@ -139,6 +140,7 @@ class DateServiceTest {
         }
     }
 
+    @Test
     @ParameterizedTest
     @CsvSource({
         "23, 59, true", // Ultimul minut valid al zilei
