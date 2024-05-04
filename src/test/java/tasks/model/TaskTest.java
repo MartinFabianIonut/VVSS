@@ -2,6 +2,9 @@ package tasks.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,6 +14,29 @@ class TaskTest {
     private Date end;
     private int interval;
     private final long oneSecond = 1000; // 1000 de milisecunde într-o secundă
+
+    private static final SimpleDateFormat SDF = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
+    @Test
+    void testTaskCreation_ValidTime() throws ParseException {
+        String title = "Buy groceries";
+        Date time = SDF.parse("2024-05-05 10:00");
+        Task task = new Task(title, time);
+
+        assertEquals(title, task.getTitle());
+        assertEquals(time, task.getTime());
+        assertEquals(time, task.getStartTime());
+        assertEquals(time, task.getEndTime());
+        assertEquals(0, task.getRepeatInterval());
+    }
+
+    @Test
+    void testTaskCreation_TimeBelowBound_ThrowsException() {
+        String title = "Water the plants";
+        Date invalidTime = new Date(-1); // Negative timestamp
+
+        assertThrows(IllegalArgumentException.class, () -> new Task(title, invalidTime));
+    }
 
     @BeforeEach
     void setUp() {
