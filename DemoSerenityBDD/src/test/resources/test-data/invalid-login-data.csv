@@ -1,0 +1,3 @@
+email,password
+invalid@example.com,wrongpassword
+anotherinvalid@example.com,anotherwrongpassword

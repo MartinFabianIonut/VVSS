@@ -1,0 +1,60 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>HealthSync Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="/style/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid text-center center-form my-container">
+    <h3 class="font-weight-bold white-text" style="margin-top: 40px">
+       Otniel's Authorization Server
+    </h3>
+    <form action="/loginpage" method="post" class="form-div" onsubmit="return validateEmail(document.getElementById('email').value);">
+        
+        <div>
+            <p class="text-warning">You have been logged out.</p>
+        </div>
+        <div class="border border-secondary p-3 rounded form-wrapper">
+            <div>
+                <h3 class="white-text">Sign in</h3>
+            </div>
+            <div class="form-group">
+                <input type="text" name="username" id="email" class="form-control" placeholder="Email" required="" autofocus="">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required="">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-light">Login</button>
+            </div>
+            <div class="d-flex justify-content-start align-items-center">
+                <a href="/help" class="link">
+                    <i class="fas fa-question-circle white-text"></i>
+                    <span class="white-text">Need help?</span>
+                </a>
+            </div>
+        </div>
+    </form>
+    <div style="font-size: 14px;" class="mt-3">
+        <a href="/signup" class="link white-text">Create account</a>
+        <span class="mx-0">|</span>
+        <a href="/change/password" class="link white-text">Change password</a>
+        <span class="mx-0">|</span>
+        <a href="/reset/password" class="link white-text">Reset password</a>
+    </div>
+
+    <div>
+        
+    </div>
+</div>
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+
+
+</body></html>

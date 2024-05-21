@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="org.example.features.InvalidUserAuthenticationTests" skipped="0" tests="2" time="8.65" timestamp="2024-05-21 11:33:11"><testcase classname="org.example.features.InvalidUserAuthenticationTests" name="User should receive error message for invalid login"/></testsuite>

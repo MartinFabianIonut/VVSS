@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="org.example.features.ValidUserAuthenticationTests" skipped="0" tests="1" time="4.57" timestamp="2024-05-21 11:32:52"><testcase classname="org.example.features.ValidUserAuthenticationTests" name="User should receive login successfully"/></testsuite>
